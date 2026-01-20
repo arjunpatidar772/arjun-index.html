@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Arjun Patidar | Portfolio</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, Helvetica, sans-serif; }
+    body { background: #f4f6f8; color: #333; line-height: 1.6; }
+    header { background: #0f172a; color: #fff; padding: 20px 40px; }
+    header h1 { font-size: 28px; }
+    nav { margin-top: 10px; }
+    nav a {
+      color: #fff;
+      margin-right: 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover { text-decoration: underline; }
+
+    .container { max-width: 1100px; margin: auto; padding: 40px; }
+    section { margin-bottom: 80px; }
+    h2 { margin-bottom: 20px; color: #0f172a; font-size: 26px; }
+
+    /* Home */
+    .home { display: flex; align-items: center; gap: 40px; }
+    .home img {
+      width: 260px;
+      border-radius: 12px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    }
+    .home-text h3 { font-size: 24px; margin-bottom: 10px; }
+
+    /* Cards */
+    .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; }
+    .card {
+      background: #fff;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    }
+    .card h4 { margin-bottom: 10px; color: #1e293b; }
+
+    /* Contact */
+    .contact-box {
+      background: #fff;
+      padding: 30px;
+      border-radius: 12px;
+      max-width: 500px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    }
+
+    footer {
+      text-align: center;
+      background: #0f172a;
+      color: #fff;
+      padding: 20px;
+    }
+
+    @media(max-width: 768px) {
+      .home { flex-direction: column; text-align: center; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Arjun Patidar</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <div class="container">
+
+    <!-- Page 1: Home -->
+    <section id="home">
+      <h2>Home</h2>
+      <div class="home">
+        <img src="arjun.jpg" alt="Arjun Patidar" />
+        <div class="home-text">
+          <h3>Hello, I'm Arjun Patidar</h3>
+          <p>
+            I am a student learning web development with HTML and CSS. 
+            This professional portfolio website.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Page 2: About -->
+    <section id="about">
+      <h2>About Me</h2>
+      <div class="card">
+        <p>
+          My name is Arjun Patidar. I am interested in computer technology and web design. 
+          I enjoy learning how websites are built and how design and code work together. 
+          My goal is to improve my technical skills and build a strong career in IT.
+        </p>
+      </div>
+    </section>
+
+    <!-- Page 3: Skills -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="cards">
+        <div class="card"><h4>HTML</h4><p>Creating structured and semantic web pages.</p></div>
+        <div class="card"><h4>CSS</h4><p>Designing responsive and attractive layouts.</p></div>
+        <div class="card"><h4>Basic Python</h4><p>Understanding basics of programming logic.</p></div>
+      </div>
+    </section>
+
+    <!-- Page 4: Projects -->
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="cards">
+        <div class="card">
+          <h4>Personal Portfolio</h4>
+          <p>A clean and professional personal website using HTML and CSS.</p>
+        </div>
+        <div class="card">
+          <h4>Student Assignment Pages</h4>
+          <p>Simple web pages created for practice and exams.</p>
+        </div>
